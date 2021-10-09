@@ -24,4 +24,12 @@ class AboutViewController: UIViewController {
         navigationController?.popToRootViewController(animated: true)
     }
     
+    @IBAction func goToCite(_ sender: Any) {
+        guard let url = URL(string: "https://broker.vtb.ru/login/vtbinvest/") else { return }
+        UIApplication.shared.open(url)
+    }
+    @IBAction func goToSchool(_ sender: Any) {
+        guard let url = URL(string: "https://school.vtb.ru/") else { return }
+        UIApplication.shared.open(url)
+    }
 }
